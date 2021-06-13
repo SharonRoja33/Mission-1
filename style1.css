@@ -13,3 +13,15 @@ body{
     overflow-x: hidden;
 }
 
+.button__primary {
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+  }
