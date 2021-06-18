@@ -31,11 +31,14 @@ body{
     display :flex;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
+  
     
 }
 
 .navbar__brand{
     width: 100px;
+    
 }
 
 .navbar__logo{
@@ -50,19 +53,33 @@ body{
 
 .hero__container{
  width: 100%;
+ margin-top: 20px;
 }
 
 .hero__image__container{
     width: 100%;
+    position: relative;
+    
+}
+
+.hero__image__shape {
+  position: absolute;
+  right: 2;
 }
 
 .hero__image{
     width:100%;
+    position: absolute;
+    right: auto;
+    left: auto;
+    z-index: 2;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
 }
 
 .hero__text{
-    font-size: 30px;
+    font-size: 25px;
     color: #1d3557;
     margin: 20px 0;
 }
@@ -131,39 +148,131 @@ body{
   .restaurant__1,
   .restaurant__4 {
     width: 100%;
-    height: 150px;
+    height: 120px;
   }
   
   .restaurant__2,
   .restaurant__3 {
     width: 120%;
-    height: 200px;
+    height: 150px;
   }
+
+  /* Updates */
+
+  .update__text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+
+  }
+
+  input[type=email]{
+    width: 250px;
+    padding: 9px 5px;
+    border:1px solid deeppink;
+    border-radius: 4px;
+    background-color:mistyrose;
+  }
+
+  .updates__container{
+    margin: 50px 5px;
+  }
+
+  .button__primary{
+    margin-top: 8px;
+    font-weight: bold;
+    padding: 8px 15px;
+  }
+
+  /* Quote */
+
+  .quote__container{
+    
+    position: relative;
+    margin-top: 4rem;
+   
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background: url("/assets/1623917151262.jpg")  center center / cover no-repeat;
+  }
+
+  .quote__img__overlay{
+    
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+    
+   
+  }
+  .quote__text{
+    color: #fff;
+    z-index: 3;
+    margin: 3.8rem 1rem;
+    text-align: center;
+    
+ }
+
+ footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem 1rem 0 0;
+  margin-top: 2rem ;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+}
+
+ footer > img {
+  width: 300px;
+  filter: brightness(0) invert(1);
+}
+
+footer > ul {
+  margin-top: -1rem;
+  color: #fff;
+}
+
+footer > ul > li {
+  margin: 5px 0;
+  list-style: none;
+}
 
 
 @media (min-width:768px){
     .navbar{
        justify-content: space-between;
-       padding: 10px 20px;
+       padding: 2px 25px;
+
     }
 
     .navbar__brand{
-        width: 150px;
+        width: 100px;
     }
 
-    .button__primary{
-        font-size: 20px;
-        padding: 20px;
-        
-    }
+   
 
     .hero__container{
+        margin-top: 30px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
         gap: 10px;
     }
+    
+    .hero__image {
+      margin-top: 2rem;
+    }
+  
 
     .explore__menu__container {
         position: relative;
@@ -215,29 +324,148 @@ body{
         width: 100%;
       }
 
+      .restaurant__1,
+      .restaurant__4 {
+        width: 100%;
+        height: 150px;
+      }
+      
+      .restaurant__2,
+      .restaurant__3 {
+        width: 120%;
+        height: 200px;
+      }
 
+      .updates__container{
+        margin: 70px 130px;
+      }
+
+      .update__form__container{
+        display: flex;
+        gap: 10px;
+        margin-top: -10px;
+    
+      }
+      
+     input[type=email]{
+       width: 350px;
+     }
+
+     .btn__parent{
+       margin-top: -6px;
+     }
+
+    
+     .update__text{
+       font-weight: bold;
+     }
+     .quote__container {
+      width: 100%;
+    }
+    .quote_image_overlay {
+      position: absolute;
+      width: 100%;
+      border-radius: 13px;
+      background-color: #0a4065;
+      opacity: 49%;
+    }
+    .quote_image_text {
+      color: #fff;
+      z-index: 3;
+      margin: 2rem 2rem;
+      text-align: center;
+      font-size: 8rem;
+      font-weight: 500;
+      line-height: 2;
+      
+    }
+    footer {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+     
 }
 
 
-@media (min-width:1020px){
+@media (min-width:1200px){
     .container {
-        max-width: 900px;
+        max-width: 1140px;
       }
+
+      .navbar{
+        justify-content: space-between;
+        padding: 2px 45px;
+ 
+     }
+
+     .hero__container{
+       margin-top: 40px;
+     }
     
       .hero__text {
         font-size: 50px;
       }
+
+    
       .explore__menu__lists {
         gap: 20px;
         padding: 0 20px;
+        
       }
-    
+      
+      .explore__menu__container{
+        margin-top: 100px;
+      }
       .explore__menu__text {
         font-size: 50px;
+        margin-left: 350px;
       }
     
       .restaurants__container{
-        margin-top: 30px;
+        gap: 30px;
+        margin-top: 30px ;
+      }
+
+      .restaurants__description{
+        font-size: 45px ;
+      }
+
+     
+      input[type=email]{
+        width: 350px;
+        height: 40px;
+      }
+
+     
+
+      .update__text{
+        font-weight: bold;
+        font-size: 45px;
+      }
+
+      .position{
+        
+        padding: 10px 20px;
+        font-size: 15px;
+        height: 50px;
+        font-weight: bold;
+      }
+
+      .btn__parent{
+        margin-top: -15px;
+      }
+     
+     
+     
+      .updates__container{
+        margin : 70px 280px;
+      }
+
+      .quote__text{
+        font-size: 30px;
       }
     }
     
@@ -245,6 +473,39 @@ body{
       .container {
         max-width: 1250px;
       }
+
+      .hero__container{
+        margin-top: 50px;
+      }
+      
+      .hero__text{
+        font-size: 60px;
+      }
+
+      .explore__menu__text{
+        margin-left: 360px;
+        font-size: 60px;
+     }
+
+     .explore__menu__container{
+       margin-top: 100px;
+     }
+
+     .restaurants__description{
+       font-size: 60px;
+     }
+
+     .updates__container{
+       margin:100px 300px;
+     }
+
+     .update__text{
+       font-size: 55px;
+     }
+
+     input[type="email"]{
+       width: 450px;
+     }
     }
   
    

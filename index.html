@@ -21,7 +21,7 @@
             </div>
             
             <div class="navbar__nav__items">
-                <button class="nav__item button__primary">Order Food</button>
+                <button class="nav__item button__primary position">Order Food</button>
             </div>
         </nav>
     </header>
@@ -31,13 +31,23 @@
         <section class="hero__container">
             <div class="hero__image__container">
                 <img class="hero__image" src="./assets/hero.jpg" alt="hero image"  />
+                <img
+                  src="./assets/svg/heroShape.svg"
+                  alt="hero image shape"
+                  class="hero__image__shape"
+                />
+                <img
+                  src="./assets/svg/herobgpattren.svg"
+                  alt="hero image shape"
+                  class="hero__image__pattren"
+                />
             </div>
             
             <div class="hero__description">
                 <h1 class="hero__text">
                     Order food from favourite restaurants near you.
                 </h1>
-                <button class="button__primary">Order Now</button>
+                <button class="button__primary position">Order Now</button>
             </div>
         </section>
 
@@ -83,7 +93,7 @@
                 </div>
             </div>
             <div class="explore__menu__view__more">
-                <button class="button__primary">View More</button>
+                <button class="button__primary position">View More</button>
             </div>
         </section>
 
@@ -125,7 +135,37 @@
             </div>
         </div>
       </section>
-    </main>
+
+      <!-- Updates -->
+      <section class="updates__container">
+        <h1 class="update__text">Stay Updated</h1>
+        <div class="update__form__container">
+          <input type="email" name="email" placeholder="email@email.com" />
+          <div class="btn__parent">
+            <button class="button__primary position" >Get Updates</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote -->
+      <section class="quote__container">
+            <div class="quote__img__overlay">
+               <h3 class="quote__text">
+                 " When a man's stomach is full it makes no difference whether he is rich or poor. " 
+               </h3>
+            </div>
+     </section>
+   </main>
+    <footer>
+      <img src="./assets/logo.png" alt="logo" />
+      <ul>
+        <li>Pricing</li>
+        <li>Terms and condition</li>
+        <li>Partnership</li>
+        <li>Career</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
     
 </body>
 </html>
